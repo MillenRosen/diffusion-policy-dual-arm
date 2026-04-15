@@ -11,6 +11,7 @@ The policy generates action chunks via iterative denoising using a conditional U
 ├── data/                           # Data directory
 ├── diffusion_policy/               # Core diffusion policy modules
 │   ├── diffusion.py                # DDPM scheduler (q_sample, sampling loop)
+│   ├── eval_diffusion.py                    # DiffusionPolicy wrapper for closed-loop control
 │   ├── evaluate_policy.py          # Closed‑loop evaluation in robosuite
 │   └── model.py                    # Conditional U‑Net 1D architecture
 ├── preprocessing/                  # Data preparation scripts
