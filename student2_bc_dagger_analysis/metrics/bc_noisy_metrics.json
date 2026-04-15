@@ -1,0 +1,181 @@
+{
+  "data_paths": [
+    "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+  ],
+  "preset": "noisy",
+  "dataset_summaries": [
+    {
+      "path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+      "source": "demo3",
+      "num_trajectories": 16,
+      "total_steps": 3018,
+      "traj_len_min": 154,
+      "traj_len_mean": 188.625,
+      "traj_len_max": 245
+    }
+  ],
+  "num_trajectories": 16,
+  "train_trajectories": 12,
+  "val_trajectories": 4,
+  "train_samples": 2328,
+  "val_samples": 690,
+  "train_sources": {
+    "demo3": 12
+  },
+  "val_sources": {
+    "demo3": 4
+  },
+  "state_dim": 50,
+  "action_dim": 14,
+  "best_val_loss": 0.28879627144855,
+  "best_epoch": 13,
+  "device": "cuda",
+  "rollout_metrics": {
+    "source_hdf5_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+    "env_name": "TwoArmLift",
+    "episodes": 5,
+    "max_steps": 600,
+    "success_count": 1,
+    "success_rate": 0.2,
+    "mean_steps": 558.4,
+    "mean_reward": 56.9052623198274,
+    "per_episode": [
+      {
+        "episode": 0,
+        "success": true,
+        "steps": 392,
+        "reward": 72.56966933826214
+      },
+      {
+        "episode": 1,
+        "success": false,
+        "steps": 600,
+        "reward": 69.28770497874054
+      },
+      {
+        "episode": 2,
+        "success": false,
+        "steps": 600,
+        "reward": 38.25961692781591
+      },
+      {
+        "episode": 3,
+        "success": false,
+        "steps": 600,
+        "reward": 27.07262023688047
+      },
+      {
+        "episode": 4,
+        "success": false,
+        "steps": 600,
+        "reward": 77.33670011743796
+      }
+    ]
+  },
+  "config": {
+    "data": null,
+    "preset": "noisy",
+    "output_dir": "D:\\a_6019\\outputs_bc_noisy_vs_dagger",
+    "epochs": 20,
+    "batch_size": 256,
+    "hidden_dim": 256,
+    "num_layers": 3,
+    "dropout": 0.1,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "lr_decay": 0.5,
+    "lr_patience": 8,
+    "early_stop_patience": 20,
+    "grad_clip": 1.0,
+    "train_ratio": 0.8,
+    "seed": 42,
+    "force_cpu": false,
+    "rollout_episodes": 5,
+    "rollout_max_steps": 600,
+    "rollout_render": false
+  },
+  "train_manifest": [
+    {
+      "name": "demo_2",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_3",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_6",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_7",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_8",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_9",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_10",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_11",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_13",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_14",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_15",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_16",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    }
+  ],
+  "val_manifest": [
+    {
+      "name": "demo_1",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_4",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_5",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    },
+    {
+      "name": "demo_12",
+      "source": "demo3",
+      "source_path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+    }
+  ]
+}

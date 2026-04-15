@@ -1,0 +1,151 @@
+{
+  "device": "cuda",
+  "episodes": 10,
+  "max_steps": 600,
+  "results": [
+    {
+      "name": "BC noisy",
+      "checkpoint_path": "D:\\a_6019\\outputs_bc_noisy_vs_dagger\\bc_best.pt",
+      "episodes": 10,
+      "max_steps": 600,
+      "success_count": 0,
+      "success_rate": 0.0,
+      "mean_steps": 600.0,
+      "mean_reward": 66.18826670698544,
+      "per_episode": [
+        {
+          "episode": 0,
+          "success": false,
+          "steps": 600,
+          "reward": 92.33803358898845
+        },
+        {
+          "episode": 1,
+          "success": false,
+          "steps": 600,
+          "reward": 97.90738862638379
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "steps": 600,
+          "reward": 102.45039961340045
+        },
+        {
+          "episode": 3,
+          "success": false,
+          "steps": 600,
+          "reward": 37.33321393379689
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 600,
+          "reward": 14.10517940585378
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 600,
+          "reward": 116.59119414845706
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "steps": 600,
+          "reward": 44.785462975403576
+        },
+        {
+          "episode": 7,
+          "success": false,
+          "steps": 600,
+          "reward": 115.66123489764709
+        },
+        {
+          "episode": 8,
+          "success": false,
+          "steps": 600,
+          "reward": 23.956195938158043
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "steps": 600,
+          "reward": 16.75436394176524
+        }
+      ]
+    },
+    {
+      "name": "DAgger round 2",
+      "checkpoint_path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\round_2_train\\dagger_round_2_best.pt",
+      "episodes": 10,
+      "max_steps": 600,
+      "success_count": 1,
+      "success_rate": 0.1,
+      "mean_steps": 591.0,
+      "mean_reward": 73.99700392445968,
+      "per_episode": [
+        {
+          "episode": 0,
+          "success": true,
+          "steps": 510,
+          "reward": 109.58779667530271
+        },
+        {
+          "episode": 1,
+          "success": false,
+          "steps": 600,
+          "reward": 115.60747661777819
+        },
+        {
+          "episode": 2,
+          "success": false,
+          "steps": 600,
+          "reward": 42.879329058973745
+        },
+        {
+          "episode": 3,
+          "success": false,
+          "steps": 600,
+          "reward": 24.486152327236773
+        },
+        {
+          "episode": 4,
+          "success": false,
+          "steps": 600,
+          "reward": 137.4670830580983
+        },
+        {
+          "episode": 5,
+          "success": false,
+          "steps": 600,
+          "reward": 30.569588211905735
+        },
+        {
+          "episode": 6,
+          "success": false,
+          "steps": 600,
+          "reward": 64.15507309909658
+        },
+        {
+          "episode": 7,
+          "success": false,
+          "steps": 600,
+          "reward": 134.32671585380055
+        },
+        {
+          "episode": 8,
+          "success": false,
+          "steps": 600,
+          "reward": 12.496461284573163
+        },
+        {
+          "episode": 9,
+          "success": false,
+          "steps": 600,
+          "reward": 68.39436305783089
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "distance_to_scripted_expert": {
+    "noisy BC data": {
+      "mean": 0.8968102931976318,
+      "median": 0.6526094675064087,
+      "p90": 1.9717308759689334
+    },
+    "DAgger R1": {
+      "mean": 0.3654256761074066,
+      "median": 0.32169100642204285,
+      "p90": 0.6247041702270508
+    },
+    "DAgger R2": {
+      "mean": 1.5482572317123413,
+      "median": 0.3282237648963928,
+      "p90": 6.247471094131473
+    },
+    "DAgger R3": {
+      "mean": 3.747159719467163,
+      "median": 0.55782151222229,
+      "p90": 14.339627742767341
+    }
+  },
+  "state_counts": {
+    "scripted_expert": 8100,
+    "noisy_bc_data": 3018,
+    "dagger_r1": 855,
+    "dagger_r2": 1098,
+    "dagger_r3": 1300
+  },
+  "action_stats": {
+    "scripted_action_mean_abs": 0.18019269406795502,
+    "noisy_action_mean_abs": 0.18123884499073029,
+    "dagger_r1_action_mean_abs": 0.1835351288318634,
+    "dagger_r2_action_mean_abs": 0.18019533157348633,
+    "dagger_r3_action_mean_abs": 0.17998024821281433
+  }
+}

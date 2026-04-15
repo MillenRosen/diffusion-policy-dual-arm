@@ -1,0 +1,637 @@
+{
+  "base_data_paths": [
+    "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5"
+  ],
+  "validated_envs": [
+    {
+      "path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+      "env_name": "TwoArmLift",
+      "env_info": {
+        "env_name": "TwoArmLift",
+        "robots": [
+          "Panda",
+          "Panda"
+        ],
+        "controller_configs": {
+          "type": "BASIC",
+          "body_parts": {
+            "right": {
+              "type": "OSC_POSE",
+              "input_max": 1,
+              "input_min": -1,
+              "output_max": [
+                0.05,
+                0.05,
+                0.05,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "output_min": [
+                -0.05,
+                -0.05,
+                -0.05,
+                -0.5,
+                -0.5,
+                -0.5
+              ],
+              "kp": 150,
+              "damping_ratio": 1,
+              "impedance_mode": "fixed",
+              "kp_limits": [
+                0,
+                300
+              ],
+              "damping_ratio_limits": [
+                0,
+                10
+              ],
+              "position_limits": null,
+              "orientation_limits": null,
+              "uncouple_pos_ori": true,
+              "input_type": "delta",
+              "input_ref_frame": "base",
+              "interpolation": null,
+              "ramp_ratio": 0.2,
+              "gripper": {
+                "type": "GRIP"
+              }
+            }
+          }
+        },
+        "env_configuration": "parallel",
+        "collector": "scripted_noisy",
+        "noise_profile": "low",
+        "noise_config": {
+          "bias_arm": 0.015,
+          "jitter_arm": 0.005,
+          "bias_gripper": 0.0,
+          "jitter_gripper": 0.0,
+          "lag_alpha": 0.15,
+          "burst_prob": 0.02,
+          "burst_sigma": 0.03,
+          "burst_len_min": 2,
+          "burst_len_max": 4,
+          "gripper_flip_prob": 0.0,
+          "stage_scale": {
+            "0": 0.8,
+            "1": 1.0,
+            "2": 1.2,
+            "3": 1.1,
+            "4": 0.9
+          }
+        }
+      }
+    }
+  ],
+  "initial_bc": {
+    "dataset_summaries": [
+      {
+        "path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+        "source": "demo3",
+        "num_trajectories": 16,
+        "total_steps": 3018,
+        "traj_len_min": 154,
+        "traj_len_mean": 188.625,
+        "traj_len_max": 245
+      }
+    ],
+    "best_val_loss": 0.28879627144855,
+    "best_epoch": 13,
+    "device": "cuda",
+    "checkpoint_path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\bc_init_best.pt",
+    "train_sources": {
+      "demo3": 12
+    },
+    "val_sources": {
+      "demo3": 4
+    }
+  },
+  "initial_eval": {
+    "episodes": 5,
+    "success_count": 0,
+    "success_rate": 0.0,
+    "mean_steps": 600.0,
+    "mean_reward": 30.00838246732254,
+    "per_episode": [
+      {
+        "episode": 0,
+        "success": false,
+        "steps": 600,
+        "reward": 22.369804809398786
+      },
+      {
+        "episode": 1,
+        "success": false,
+        "steps": 600,
+        "reward": 20.222683868419963
+      },
+      {
+        "episode": 2,
+        "success": false,
+        "steps": 600,
+        "reward": 62.79168410964033
+      },
+      {
+        "episode": 3,
+        "success": false,
+        "steps": 600,
+        "reward": 12.480568722132531
+      },
+      {
+        "episode": 4,
+        "success": false,
+        "steps": 600,
+        "reward": 32.177170827021094
+      }
+    ]
+  },
+  "rounds": [
+    {
+      "round_idx": 1,
+      "aggregate_data_paths": [
+        "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+        "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_1\\dagger_round_1.hdf5"
+      ],
+      "collection": {
+        "round_idx": 1,
+        "hdf5_path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_1\\dagger_round_1.hdf5",
+        "requested_episodes": 5,
+        "saved_episodes": 5,
+        "attempted_episodes": 5,
+        "success_count": 5,
+        "success_rate": 1.0,
+        "total_saved_steps": 855,
+        "beta": 0.7,
+        "keep_failed_episodes": false,
+        "per_episode": [
+          {
+            "episode": 0,
+            "success": true,
+            "steps": 180,
+            "reward": 32.59024267872476,
+            "beta": 0.7,
+            "last_executor": "expert"
+          },
+          {
+            "episode": 1,
+            "success": true,
+            "steps": 168,
+            "reward": 32.231153275925394,
+            "beta": 0.7,
+            "last_executor": "expert"
+          },
+          {
+            "episode": 2,
+            "success": true,
+            "steps": 158,
+            "reward": 30.870623569838642,
+            "beta": 0.7,
+            "last_executor": "expert"
+          },
+          {
+            "episode": 3,
+            "success": true,
+            "steps": 168,
+            "reward": 30.979909043742026,
+            "beta": 0.7,
+            "last_executor": "expert"
+          },
+          {
+            "episode": 4,
+            "success": true,
+            "steps": 181,
+            "reward": 32.9422136763852,
+            "beta": 0.7,
+            "last_executor": "expert"
+          }
+        ]
+      },
+      "training": {
+        "dataset_summaries": [
+          {
+            "path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+            "source": "demo3",
+            "num_trajectories": 16,
+            "total_steps": 3018,
+            "traj_len_min": 154,
+            "traj_len_mean": 188.625,
+            "traj_len_max": 245
+          },
+          {
+            "path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_1\\dagger_round_1.hdf5",
+            "source": "dagger_round_1",
+            "num_trajectories": 5,
+            "total_steps": 855,
+            "traj_len_min": 158,
+            "traj_len_mean": 171.0,
+            "traj_len_max": 181
+          }
+        ],
+        "best_val_loss": 0.18160139450843207,
+        "best_epoch": 14,
+        "device": "cuda",
+        "checkpoint_path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\round_1_train\\dagger_round_1_best.pt",
+        "train_sources": {
+          "demo3": 12,
+          "dagger_round_1": 4
+        },
+        "val_sources": {
+          "demo3": 4,
+          "dagger_round_1": 1
+        }
+      },
+      "eval": {
+        "episodes": 5,
+        "success_count": 0,
+        "success_rate": 0.0,
+        "mean_steps": 600.0,
+        "mean_reward": 66.64769302207966,
+        "per_episode": [
+          {
+            "episode": 0,
+            "success": false,
+            "steps": 600,
+            "reward": 32.51673592651392
+          },
+          {
+            "episode": 1,
+            "success": false,
+            "steps": 600,
+            "reward": 77.72646308109421
+          },
+          {
+            "episode": 2,
+            "success": false,
+            "steps": 600,
+            "reward": 77.89947944582751
+          },
+          {
+            "episode": 3,
+            "success": false,
+            "steps": 600,
+            "reward": 84.56670082067559
+          },
+          {
+            "episode": 4,
+            "success": false,
+            "steps": 600,
+            "reward": 60.529085836287074
+          }
+        ]
+      },
+      "skipped": false
+    },
+    {
+      "round_idx": 2,
+      "aggregate_data_paths": [
+        "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+        "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_2\\dagger_round_2.hdf5"
+      ],
+      "collection": {
+        "round_idx": 2,
+        "hdf5_path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_2\\dagger_round_2.hdf5",
+        "requested_episodes": 5,
+        "saved_episodes": 5,
+        "attempted_episodes": 6,
+        "success_count": 5,
+        "success_rate": 0.8333333333333334,
+        "total_saved_steps": 1098,
+        "beta": 0.35,
+        "keep_failed_episodes": false,
+        "per_episode": [
+          {
+            "episode": 0,
+            "success": false,
+            "steps": 600,
+            "reward": 25.342068789450607,
+            "beta": 0.35,
+            "last_executor": "expert"
+          },
+          {
+            "episode": 1,
+            "success": true,
+            "steps": 169,
+            "reward": 29.898849016342407,
+            "beta": 0.35,
+            "last_executor": "student"
+          },
+          {
+            "episode": 2,
+            "success": true,
+            "steps": 166,
+            "reward": 31.492393670061364,
+            "beta": 0.35,
+            "last_executor": "student"
+          },
+          {
+            "episode": 3,
+            "success": true,
+            "steps": 192,
+            "reward": 38.130544322925275,
+            "beta": 0.35,
+            "last_executor": "student"
+          },
+          {
+            "episode": 4,
+            "success": true,
+            "steps": 401,
+            "reward": 66.57343535388344,
+            "beta": 0.35,
+            "last_executor": "student"
+          },
+          {
+            "episode": 5,
+            "success": true,
+            "steps": 170,
+            "reward": 30.59963391899344,
+            "beta": 0.35,
+            "last_executor": "student"
+          }
+        ]
+      },
+      "training": {
+        "dataset_summaries": [
+          {
+            "path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+            "source": "demo3",
+            "num_trajectories": 16,
+            "total_steps": 3018,
+            "traj_len_min": 154,
+            "traj_len_mean": 188.625,
+            "traj_len_max": 245
+          },
+          {
+            "path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_1\\dagger_round_1.hdf5",
+            "source": "dagger_round_1",
+            "num_trajectories": 5,
+            "total_steps": 855,
+            "traj_len_min": 158,
+            "traj_len_mean": 171.0,
+            "traj_len_max": 181
+          },
+          {
+            "path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_2\\dagger_round_2.hdf5",
+            "source": "dagger_round_2",
+            "num_trajectories": 5,
+            "total_steps": 1098,
+            "traj_len_min": 166,
+            "traj_len_mean": 219.6,
+            "traj_len_max": 401
+          }
+        ],
+        "best_val_loss": 0.20589428604888554,
+        "best_epoch": 15,
+        "device": "cuda",
+        "checkpoint_path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\round_2_train\\dagger_round_2_best.pt",
+        "train_sources": {
+          "demo3": 12,
+          "dagger_round_1": 4,
+          "dagger_round_2": 4
+        },
+        "val_sources": {
+          "demo3": 4,
+          "dagger_round_1": 1,
+          "dagger_round_2": 1
+        }
+      },
+      "eval": {
+        "episodes": 5,
+        "success_count": 2,
+        "success_rate": 0.4,
+        "mean_steps": 551.6,
+        "mean_reward": 92.39571982013487,
+        "per_episode": [
+          {
+            "episode": 0,
+            "success": false,
+            "steps": 600,
+            "reward": 92.9947900070507
+          },
+          {
+            "episode": 1,
+            "success": false,
+            "steps": 600,
+            "reward": 16.436163059022164
+          },
+          {
+            "episode": 2,
+            "success": true,
+            "steps": 451,
+            "reward": 97.23726080944218
+          },
+          {
+            "episode": 3,
+            "success": false,
+            "steps": 600,
+            "reward": 141.1286347973693
+          },
+          {
+            "episode": 4,
+            "success": true,
+            "steps": 507,
+            "reward": 114.18175042778998
+          }
+        ]
+      },
+      "skipped": false
+    },
+    {
+      "round_idx": 3,
+      "aggregate_data_paths": [
+        "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+        "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_2\\dagger_round_2.hdf5",
+        "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_3\\dagger_round_3.hdf5"
+      ],
+      "collection": {
+        "round_idx": 3,
+        "hdf5_path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_3\\dagger_round_3.hdf5",
+        "requested_episodes": 5,
+        "saved_episodes": 5,
+        "attempted_episodes": 6,
+        "success_count": 5,
+        "success_rate": 0.8333333333333334,
+        "total_saved_steps": 1300,
+        "beta": 0.175,
+        "keep_failed_episodes": false,
+        "per_episode": [
+          {
+            "episode": 0,
+            "success": true,
+            "steps": 165,
+            "reward": 31.02429456393032,
+            "beta": 0.175,
+            "last_executor": "student"
+          },
+          {
+            "episode": 1,
+            "success": true,
+            "steps": 161,
+            "reward": 28.41457706386835,
+            "beta": 0.175,
+            "last_executor": "student"
+          },
+          {
+            "episode": 2,
+            "success": true,
+            "steps": 226,
+            "reward": 33.92331978922449,
+            "beta": 0.175,
+            "last_executor": "student"
+          },
+          {
+            "episode": 3,
+            "success": true,
+            "steps": 583,
+            "reward": 73.56425765959554,
+            "beta": 0.175,
+            "last_executor": "student"
+          },
+          {
+            "episode": 4,
+            "success": false,
+            "steps": 600,
+            "reward": 101.42329566471163,
+            "beta": 0.175,
+            "last_executor": "student"
+          },
+          {
+            "episode": 5,
+            "success": true,
+            "steps": 165,
+            "reward": 31.54926304626812,
+            "beta": 0.175,
+            "last_executor": "student"
+          }
+        ]
+      },
+      "training": {
+        "dataset_summaries": [
+          {
+            "path": "D:\\a_6019\\demonstrations\\demonstrations\\script_collect_noisy\\demo3.hdf5",
+            "source": "demo3",
+            "num_trajectories": 16,
+            "total_steps": 3018,
+            "traj_len_min": 154,
+            "traj_len_mean": 188.625,
+            "traj_len_max": 245
+          },
+          {
+            "path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_1\\dagger_round_1.hdf5",
+            "source": "dagger_round_1",
+            "num_trajectories": 5,
+            "total_steps": 855,
+            "traj_len_min": 158,
+            "traj_len_mean": 171.0,
+            "traj_len_max": 181
+          },
+          {
+            "path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_2\\dagger_round_2.hdf5",
+            "source": "dagger_round_2",
+            "num_trajectories": 5,
+            "total_steps": 1098,
+            "traj_len_min": 166,
+            "traj_len_mean": 219.6,
+            "traj_len_max": 401
+          },
+          {
+            "path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\dagger_round_3\\dagger_round_3.hdf5",
+            "source": "dagger_round_3",
+            "num_trajectories": 5,
+            "total_steps": 1300,
+            "traj_len_min": 161,
+            "traj_len_mean": 260.0,
+            "traj_len_max": 583
+          }
+        ],
+        "best_val_loss": 0.24606430347112537,
+        "best_epoch": 5,
+        "device": "cuda",
+        "checkpoint_path": "D:\\a_6019\\outputs_dagger_noisy_vs_bc\\round_3_train\\dagger_round_3_best.pt",
+        "train_sources": {
+          "demo3": 12,
+          "dagger_round_1": 4,
+          "dagger_round_2": 3,
+          "dagger_round_3": 5
+        },
+        "val_sources": {
+          "demo3": 4,
+          "dagger_round_1": 1,
+          "dagger_round_2": 2
+        }
+      },
+      "eval": {
+        "episodes": 5,
+        "success_count": 0,
+        "success_rate": 0.0,
+        "mean_steps": 600.0,
+        "mean_reward": 84.03869440646132,
+        "per_episode": [
+          {
+            "episode": 0,
+            "success": false,
+            "steps": 600,
+            "reward": 21.803461408778443
+          },
+          {
+            "episode": 1,
+            "success": false,
+            "steps": 600,
+            "reward": 99.22904723540222
+          },
+          {
+            "episode": 2,
+            "success": false,
+            "steps": 600,
+            "reward": 107.14840269117158
+          },
+          {
+            "episode": 3,
+            "success": false,
+            "steps": 600,
+            "reward": 71.6510393183092
+          },
+          {
+            "episode": 4,
+            "success": false,
+            "steps": 600,
+            "reward": 120.36152137864514
+          }
+        ]
+      },
+      "skipped": false
+    }
+  ],
+  "config": {
+    "data": null,
+    "preset": "noisy",
+    "output_dir": "D:\\a_6019\\outputs_dagger_noisy_vs_bc",
+    "epochs": 15,
+    "batch_size": 256,
+    "hidden_dim": 256,
+    "num_layers": 3,
+    "dropout": 0.1,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "lr_decay": 0.5,
+    "lr_patience": 6,
+    "early_stop_patience": 15,
+    "grad_clip": 1.0,
+    "train_ratio": 0.8,
+    "seed": 42,
+    "force_cpu": false,
+    "dagger_rounds": 3,
+    "dagger_episodes": 5,
+    "beta_start": 0.7,
+    "beta_decay": 0.5,
+    "beta_min": 0.1,
+    "execution_policy": "mixed",
+    "keep_failed_episodes": false,
+    "max_attempt_multiplier": 3,
+    "rollout_max_steps": 600,
+    "rollout_render": false,
+    "eval_episodes": 5
+  }
+}
