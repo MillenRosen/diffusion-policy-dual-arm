@@ -16,6 +16,8 @@ The policy generates action chunks via iterative denoising using a conditional U
 ├── preprocessing/                  # Data preparation scripts
 │   ├── preprocess_data.py          # Load HDF5 demos, create sliding windows, normalize
 │   └── utils.py                    # HDF5 loading, normalization utilities
+├── student1_data_pipeline/         # student1's works
+├── student2_bc_dagger_analysis/    # student2's works
 └── README.md
 ```
 
