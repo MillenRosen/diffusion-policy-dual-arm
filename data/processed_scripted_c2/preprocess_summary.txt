@@ -1,0 +1,10 @@
+raw_path: D:\a_6019\demonstrations\demonstrations\script_collect\demo2.hdf5
+num_demos: 50
+train_demos: 40
+val_demos: 10
+obs_horizon: 2
+action_chunk: 2
+obs_dim: 50
+act_dim: 14
+train_windows: 6362
+val_windows: 1588
