@@ -138,5 +138,7 @@ The script will:
 
 ## Results
 
-With action chunk length = 2, dropout = 0.1, data augmentation, and 30 demonstrations, the policy achieved **50% success rate** over 10 episodes (5 successes).  
-Failed episodes run to the timeout (600 steps). Longer action chunks (4 or 8) led to 0% success due to overfitting.
+With the best configuration (action chunk length = 4, dropout = 0.1, data augmentation, and 80 clean demonstrations), the policy achieved **86% success rate** over 100 evaluation episodes in the `TwoArmLift` task.  
+Shorter chunks (H=2) reached 78% success, while longer chunks (≥8) suffered from overfitting and lower performance.  
+The policy also tolerates moderate demonstration noise (up to 50% corruption) with success rates above 60% when enough data is provided.  
+See the full report for detailed ablation studies on action chunk length, noise levels, and dataset size.
