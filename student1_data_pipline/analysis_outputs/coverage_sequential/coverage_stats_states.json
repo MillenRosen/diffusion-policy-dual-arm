@@ -1,0 +1,29 @@
+{
+  "datasets": {
+    "sequential_clean": {
+      "num_points": 5000,
+      "center": [
+        0.11165506392717361,
+        -0.011851489543914795
+      ]
+    },
+    "sequential_noisy": {
+      "num_points": 5000,
+      "center": [
+        -0.11165517568588257,
+        0.011852309107780457
+      ]
+    }
+  },
+  "explained_variance_ratio": [
+    0.8879655599594116,
+    0.06598496437072754
+  ],
+  "pairwise_center_distances": {
+    "sequential_clean__vs__sequential_noisy": 0.22456476092338562
+  },
+  "plot_path": "./analysis_outputs/coverage_sequential\\coverage_pca_states.png",
+  "feature_mode": "states",
+  "sample_mode": "all",
+  "max_points_per_dataset": 5000
+}

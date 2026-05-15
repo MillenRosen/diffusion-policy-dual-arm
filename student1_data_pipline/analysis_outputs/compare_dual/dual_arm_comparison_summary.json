@@ -1,0 +1,16 @@
+{
+  "clean_hdf5": "./demonstrations/dual_arm/expert/dual_arm_clean.hdf5",
+  "noisy_hdf5": "./demonstrations/dual_arm/noisy/dual_arm_noisy.hdf5",
+  "clean_format": "official",
+  "noisy_format": "official",
+  "clean_num_episodes": 200,
+  "noisy_num_episodes": 175,
+  "plots": {
+    "length_hist_compare": "./analysis_outputs/compare_dual\\dual_arm_length_hist_compare.png",
+    "action_hist_compare": "./analysis_outputs/compare_dual\\dual_arm_action_hist_compare.png",
+    "action_line_compare": "./analysis_outputs/compare_dual\\dual_arm_action_line_compare.png",
+    "state_norm_hist_compare": "./analysis_outputs/compare_dual\\dual_arm_state_norm_hist_compare.png",
+    "success_bar_compare": null
+  },
+  "success_stats": null
+}

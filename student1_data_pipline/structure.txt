@@ -1,0 +1,54 @@
+student1_project/
+│
+├── core/                      # 核心算法模块
+│   ├── envs/
+│   │   ├── base_env.py
+│   │   ├── dual_arm_env.py
+│   │   ├── single_arm_env.py
+│   │   └── sequential_env.py
+│   │
+│   ├── expert/
+│   │   ├── base_expert.py
+│   │   ├── dual_arm_expert.py
+│   │   ├── single_arm_expert.py
+│   │   └── sequential_expert.py
+│   │
+│   ├── noise/
+│   │   ├── base_noise.py
+│   │   ├── action_noise.py
+│   │   ├── state_noise.py
+│   │   └── stage_aware_noise.py
+│   │
+│   ├── rollout/
+│   │   ├── rollout_engine.py
+│   │   └── trajectory.py
+│   │
+│   └── dataset/
+│       ├── collector.py
+│       ├── hdf5_builder.py
+│       └── dataset_utils.py
+│
+├── configs/                   # 实验配置
+│   ├── dual_arm.yaml
+│   ├── single_arm.yaml
+│   ├── sequential.yaml
+│   └── noise_profiles.yaml
+│
+├── scripts/                   # 入口脚本
+│   ├── collect_dual_arm.py
+│   ├── collect_single_arm.py
+│   ├── collect_sequential.py
+│   ├── generate_noisy.py
+│   └── playback.py
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── logs/
+│
+├── analysis/                  # 评估
+│   ├── dataset_stats.py
+│   ├── coverage_analysis.py
+│   └── visualization.py
+│
+└── README.md

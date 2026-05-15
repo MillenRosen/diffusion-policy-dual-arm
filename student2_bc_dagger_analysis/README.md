@@ -1,83 +1,81 @@
-﻿这部分主要作为经典模仿学习 baseline 和中间对照方法，为后续 的 Diffusion Policy 提供比较基准和问题动机。
+# Student 2: Behavior Cloning, DAgger, and Covariate Shift Analysis for Dual-Arm Imitation Learning
 
-## 文件夹内容
+## Author
 
-- `code/`：BC、DAgger、scripted/noisy expert 数据采集与补充评估脚本。
-- `figures/`：训练 loss 曲线、BC vs DAgger 成功率对比图，以及 covariate shift 分析图。
-- `metrics/`：BC、DAgger、稳定评估和 covariate shift 分析的 JSON/CSV 指标文件。
-- `models/`：用于对比的关键模型 checkpoint。
-- `dagger_data/`：noisy-data DAgger 实验中收集到的聚合 HDF5 数据。
+- Name: Yang Muhan
+- Student ID: 59793561
 
-## 主要实验结果
+## Role Description
 
-- noisy demonstrations 上的 BC baseline 成功率为 `0.20`。
-- 最好的 DAgger 轮次是 `DAgger R2`，成功率为 `0.40`。
-- 最好的 DAgger checkpoint 保存在 `models/dagger_noisy_round_2_best.pt`。
+This repository packages the Student 2 contribution to the 6019 dual-arm imitation learning project:
 
-这说明在当前实验设置下，DAgger best round 相比 noisy BC baseline 有一定提升。不过这个提升主要应作为 baseline 对照和趋势性结果使用。
+- Behavior Cloning baseline
+- DAgger baseline
+- Noisy-demonstration robustness experiments
+- Covariate shift analysis
+- Final 50-episode evaluation
+- Report figures and appendix diagnostics
 
-## 10-episode 稳定评估补充
+## Repository Structure
 
-为了避免只依赖 5-episode 训练阶段评估，额外对 noisy BC 和 DAgger round 2 checkpoint 做了 10-episode 评估：
+- `src/`: BC, DAgger, noisy-dataset mixing, final evaluation, expert policy, and diagnostic scripts.
+- `results/final_tables/`: lightweight final CSV, JSON, and Markdown summaries, including the 50-episode comparison tables.
+- `results/figures/`: final report figures used to communicate the main Student 2 findings.
+- `results/appendix/`: compact ablation, noise80 diagnostic, and training-curve support files.
+- `report/`: final report PDF, AI Prompt Log, and figure-caption notes retained from the original experiment package.
+- `docs/`: packaging notes, reproduction notes, and excluded-file documentation.
 
-- BC noisy：`0.00`，即 0/10。
-- DAgger round 2：`0.10`，即 1/10。
+## Main Results
 
-这个更保守的评估仍然显示 DAgger round 2 略好于 noisy BC，但差距较小。因此报告中建议表述为：DAgger best round 展示了弱提升趋势，但结果仍然受到评估方差和聚合轮次的影响。
+At noisy ratio `0.5`:
 
-## 结果解释建议
+- BC achieved `0/50` success.
+- DAgger achieved `45/50` success.
 
-这部分的定位是经典 imitation learning baseline，而不是项目最终性能最高的模型。BC 提供最基础的监督学习 baseline；DAgger 通过收集 student policy 访问到的状态，并用 scripted expert 重新标注动作，作为缓解 covariate shift 的中间方法。
+This result shows that DAgger under moderate noise can reduce covariate shift by using expert-labeled learner-visited states. The packaged tables in `results/final_tables/` preserve the exact summary rows used for the final Student 2 analysis.
 
-在 noisy-data 设置下，BC 成功率为 `20%`，DAgger round 2 成功率为 `40%`，但 DAgger round 3 出现回落。因此得出以下结论：
+## How To Reproduce
 
-- best-round DAgger 相比 BC 有一定改善。
-- DAgger 对 beta schedule、数据聚合轮次和评估随机性比较敏感。
-- 这也自然引出 3 号 Diffusion Policy 的必要性：更强的序列建模和多模态动作建模有望提升长期任务稳定性。
+The full experiments require the original dual-arm demonstration datasets, checkpoints, and a working robosuite environment. Those large assets are intentionally not included here.
 
-## Covariate Shift 分析
+Example commands based on the shipped scripts:
 
-covariate shift 分析比较了 noisy BC 数据和 DAgger 收集状态相对于 scripted expert 状态分布的差异：
-
-- `figures/covariate_shift_state_pca.png`：状态分布的 PCA 投影图。
-- `figures/covariate_shift_nearest_distance.png`：到 scripted expert 状态分布的最近距离统计图。
-- `metrics/covariate_shift_metrics.json`：对应的数值统计结果。
-
-距离统计如下：
-
-```json
-{
-  "noisy BC data": {
-    "mean": 0.8968102931976318,
-    "median": 0.6526094675064087,
-    "p90": 1.9717308759689334
-  },
-  "DAgger R1": {
-    "mean": 0.3654256761074066,
-    "median": 0.32169100642204285,
-    "p90": 0.6247041702270508
-  },
-  "DAgger R2": {
-    "mean": 1.5482572317123413,
-    "median": 0.3282237648963928,
-    "p90": 6.247471094131473
-  },
-  "DAgger R3": {
-    "mean": 3.747159719467163,
-    "median": 0.55782151222229,
-    "p90": 14.339627742767341
-  }
-}
+```bash
+python src/run_make_mixed_dual_arm.py \
+  --clean-hdf5 path/to/dual_arm_clean.hdf5 \
+  --noisy-hdf5 path/to/dual_arm_noisy.hdf5 \
+  --output-root path/to/mixed_data
 ```
 
-其中 R1 的状态分布更接近 scripted expert，R2/R3 的 mean 和 p90 变大，说明后续轮次中出现了更多偏离 expert distribution 的状态。这可以用于说明 DAgger 确实暴露了 student policy 访问到的状态分布，但后续轮次也可能引入更大的分布漂移。
+```bash
+python src/run_bc_ratio_experiments.py \
+  --mixed-root path/to/mixed_data \
+  --output-root path/to/bc_outputs \
+  --ratios noise0 noise30 noise50 noise100
+```
 
-做 Diffusion Policy 时，建议主要使用以下结果作为对比：
+```bash
+python src/run_dagger_ratio_experiments.py \
+  --mixed-root path/to/mixed_data \
+  --bc-root path/to/bc_outputs \
+  --output-root path/to/dagger_outputs \
+  --ratios noise0 noise30 noise50 noise100
+```
 
-- BC noisy baseline：`metrics/bc_noisy_metrics.json`。
-- DAgger best round：`metrics/dagger_noisy_metrics.json` 中的 DAgger R2。
-- 对比表：`metrics/bc_dagger_noisy_comparison.csv`。
-- 成功率对比图：`figures/success_rate_bc_vs_dagger_noisy.png`。
-- 稳定评估结果：`metrics/stable_eval_noisy_bc_vs_dagger_round2.json`。
-- covariate shift 分析图：`figures/covariate_shift_state_pca.png` 和 `figures/covariate_shift_nearest_distance.png`。
+```bash
+python src/run_final_dual_arm_eval.py \
+  --final-root path/to/final_dual_arm \
+  --episodes 20
+```
 
+`src/run_50ep_final_eval_selected.py` is also included because it produced the final selected 50-episode comparison artifacts. In the archived project version, it stores `final_root` directly inside the script, so update that path before rerunning it in a new location.
+
+## Notes On Excluded Files
+
+Large demonstration datasets and trained checkpoints are excluded due to file size limits. They can be provided separately if required.
+
+The GitHub package omits HDF5 datasets, model checkpoints, raw intermediate rollout stores, large trace artifacts, temporary logs, and experiment caches. See `docs/excluded_large_files.md` for details.
+
+## AI Usage
+
+The AI Prompt Log is included in `report/Ai Prompt Log Yang Muhan 59793561.docx`.

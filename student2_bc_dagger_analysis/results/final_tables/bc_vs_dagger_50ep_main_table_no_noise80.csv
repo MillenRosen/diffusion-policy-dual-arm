@@ -1,0 +1,5 @@
+ratio,BC_SR,BC_success,BC_mean_steps,best_DAgger_round,DAgger_SR,DAgger_success,DAgger_mean_steps,note
+0.0,0.72,36/50,265.64,2,0.44,22/50,404.08,clean setting
+0.3,0.18,9/50,531.06,3,0.68,34/50,334.52,moderate noise transition
+0.5,0.00,0/50,600.00,3,0.90,45/50,204.08,strongest DAgger recovery
+1.0,0.00,0/50,600.00,3,0.24,12/50,536.42,fully noisy partial recovery

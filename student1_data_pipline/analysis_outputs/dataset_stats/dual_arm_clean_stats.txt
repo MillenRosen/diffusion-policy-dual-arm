@@ -1,0 +1,12 @@
+hdf5_path: ./demonstrations/dual_arm/expert/dual_arm_clean.hdf5
+format: official
+num_episodes: 200
+avg_length: 121.105
+std_length: 3.850191553676258
+min_length: 112
+max_length: 127
+actions.mean_abs: 0.19104223730156658
+actions.max_abs: 1.0
+states.mean_norm: 6.544323701328465
+states.std_norm: 0.8291706212145402
+success_rate: unavailable (Per-demo success is not stored in this HDF5 format. For official robosuite exports, success is often implicit because only saved demos are kept.)

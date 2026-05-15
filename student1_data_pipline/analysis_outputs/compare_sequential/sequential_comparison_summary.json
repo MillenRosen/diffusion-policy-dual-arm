@@ -1,0 +1,16 @@
+{
+  "clean_hdf5": "./demonstrations/sequential/expert/sequential_clean.hdf5",
+  "noisy_hdf5": "./demonstrations/sequential/noisy/sequential_noisy.hdf5",
+  "clean_format": "official",
+  "noisy_format": "official",
+  "clean_num_episodes": 200,
+  "noisy_num_episodes": 166,
+  "plots": {
+    "length_hist_compare": "./analysis_outputs/compare_sequential\\sequential_length_hist_compare.png",
+    "action_hist_compare": "./analysis_outputs/compare_sequential\\sequential_action_hist_compare.png",
+    "action_line_compare": "./analysis_outputs/compare_sequential\\sequential_action_line_compare.png",
+    "state_norm_hist_compare": "./analysis_outputs/compare_sequential\\sequential_state_norm_hist_compare.png",
+    "success_bar_compare": null
+  },
+  "success_stats": null
+}

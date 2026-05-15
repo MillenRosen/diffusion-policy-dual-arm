@@ -1,0 +1,407 @@
+
+=== noise50 ===
+{
+  "clean_count": 80,
+  "noisy_count": 80,
+  "traj_ratio": 0.5,
+  "timestep_ratio": 0.5864693807731782,
+  "train_stats": {
+    "num_demos": 128,
+    "source_counts": {
+      "clean": 61,
+      "noisy": 67
+    },
+    "source_steps": {
+      "clean": 7377,
+      "noisy": 11399
+    },
+    "length_min": 113,
+    "length_mean": 146.6875,
+    "length_max": 545,
+    "success_count": 0,
+    "has_success_attr_count": 0,
+    "action_abs_mean": 0.23093914985656738,
+    "gripper_positive_fraction": 0.17485087345547506,
+    "z_positive_fraction": 0.4693757988922028
+  },
+  "val_stats": {
+    "num_demos": 32,
+    "source_counts": {
+      "noisy": 13,
+      "clean": 19
+    },
+    "source_steps": {
+      "noisy": 2315,
+      "clean": 2293
+    },
+    "length_min": 112,
+    "length_mean": 144.0,
+    "length_max": 468,
+    "success_count": 0,
+    "has_success_attr_count": 0,
+    "action_abs_mean": 0.22343166172504425,
+    "gripper_positive_fraction": 0.17317708333333334,
+    "z_positive_fraction": 0.4679904513888889
+  },
+  "bc_best_val_loss": 0.4754614999724759,
+  "final_50ep_row": {
+    "ratio": "0.5",
+    "BC_success_rate_50ep": "0.0",
+    "BC_success_count_50ep": "0",
+    "BC_mean_steps_50ep": "600.0",
+    "best_DAgger_round": "3",
+    "DAgger_success_rate_50ep": "0.9",
+    "DAgger_success_count_50ep": "45",
+    "DAgger_mean_steps_50ep": "204.08"
+  },
+  "rounds": [
+    {
+      "round_idx": 1,
+      "skipped": false,
+      "beta": 1.0,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.534804901935988,
+      "intermediate_success_count": 0,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.0,
+      "intermediate_mean_steps": 600.0,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_1\\dagger_round_1.hdf5"
+      ]
+    },
+    {
+      "round_idx": 2,
+      "skipped": false,
+      "beta": 0.8,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.588375779075755,
+      "intermediate_success_count": 2,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.06666666666666667,
+      "intermediate_mean_steps": 572.6666666666666,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_2\\dagger_round_2.hdf5"
+      ]
+    },
+    {
+      "round_idx": 3,
+      "skipped": false,
+      "beta": 0.6400000000000001,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.6450175363570452,
+      "intermediate_success_count": 30,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 1.0,
+      "intermediate_mean_steps": 161.83333333333334,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_3\\dagger_round_3.hdf5"
+      ]
+    },
+    {
+      "round_idx": 4,
+      "skipped": false,
+      "beta": 0.5120000000000001,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.7000449674410952,
+      "intermediate_success_count": 26,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.8666666666666667,
+      "intermediate_mean_steps": 227.8,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_3\\dagger_round_3.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_4\\dagger_round_4.hdf5"
+      ]
+    }
+  ]
+}
+
+=== noise80 ===
+{
+  "clean_count": 32,
+  "noisy_count": 128,
+  "traj_ratio": 0.8,
+  "timestep_ratio": 0.845957785742732,
+  "train_stats": {
+    "num_demos": 128,
+    "source_counts": {
+      "noisy": 100,
+      "clean": 28
+    },
+    "source_steps": {
+      "noisy": 16391,
+      "clean": 3391
+    },
+    "length_min": 115,
+    "length_mean": 154.546875,
+    "length_max": 545,
+    "success_count": 0,
+    "has_success_attr_count": 0,
+    "action_abs_mean": 0.24614274501800537,
+    "gripper_positive_fraction": 0.16560509554140126,
+    "z_positive_fraction": 0.4586492771206147
+  },
+  "val_stats": {
+    "num_demos": 32,
+    "source_counts": {
+      "clean": 4,
+      "noisy": 28
+    },
+    "source_steps": {
+      "clean": 477,
+      "noisy": 4851
+    },
+    "length_min": 112,
+    "length_mean": 166.5,
+    "length_max": 468,
+    "success_count": 0,
+    "has_success_attr_count": 0,
+    "action_abs_mean": 0.2512260377407074,
+    "gripper_positive_fraction": 0.1617867867867868,
+    "z_positive_fraction": 0.45899024024024027
+  },
+  "bc_best_val_loss": 0.6667344611328285,
+  "final_50ep_row": {
+    "ratio": "0.8",
+    "BC_success_rate_50ep": "0.0",
+    "BC_success_count_50ep": "0",
+    "BC_mean_steps_50ep": "600.0",
+    "best_DAgger_round": "1",
+    "DAgger_success_rate_50ep": "0.0",
+    "DAgger_success_count_50ep": "0",
+    "DAgger_mean_steps_50ep": "600.0"
+  },
+  "rounds": [
+    {
+      "round_idx": 1,
+      "skipped": false,
+      "beta": 1.0,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.7478652768306904,
+      "intermediate_success_count": 0,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.0,
+      "intermediate_mean_steps": 600.0,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_1\\dagger_round_1.hdf5"
+      ]
+    },
+    {
+      "round_idx": 2,
+      "skipped": false,
+      "beta": 0.8,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.8264553951429533,
+      "intermediate_success_count": 0,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.0,
+      "intermediate_mean_steps": 600.0,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_2\\dagger_round_2.hdf5"
+      ]
+    },
+    {
+      "round_idx": 3,
+      "skipped": false,
+      "beta": 0.6400000000000001,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.9010610143701594,
+      "intermediate_success_count": 0,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.0,
+      "intermediate_mean_steps": 600.0,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_3\\dagger_round_3.hdf5"
+      ]
+    },
+    {
+      "round_idx": 4,
+      "skipped": false,
+      "beta": 0.5120000000000001,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 19,
+      "collection_success_rate": 0.95,
+      "best_val_loss": 0.9871042254450801,
+      "intermediate_success_count": 0,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.0,
+      "intermediate_mean_steps": 600.0,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_3\\dagger_round_3.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_4\\dagger_round_4.hdf5"
+      ]
+    }
+  ]
+}
+
+=== noise100 ===
+{
+  "clean_count": 0,
+  "noisy_count": 160,
+  "traj_ratio": 1.0,
+  "timestep_ratio": 1.0,
+  "train_stats": {
+    "num_demos": 128,
+    "source_counts": {
+      "noisy": 128
+    },
+    "source_steps": {
+      "noisy": 21041
+    },
+    "length_min": 115,
+    "length_mean": 164.3828125,
+    "length_max": 468,
+    "success_count": 0,
+    "has_success_attr_count": 0,
+    "action_abs_mean": 0.25761306285858154,
+    "gripper_positive_fraction": 0.1573594410912029,
+    "z_positive_fraction": 0.4504063495081032
+  },
+  "val_stats": {
+    "num_demos": 32,
+    "source_counts": {
+      "noisy": 32
+    },
+    "source_steps": {
+      "noisy": 5368
+    },
+    "length_min": 111,
+    "length_mean": 167.75,
+    "length_max": 545,
+    "success_count": 0,
+    "has_success_attr_count": 0,
+    "action_abs_mean": 0.25737208127975464,
+    "gripper_positive_fraction": 0.15461997019374069,
+    "z_positive_fraction": 0.4475596125186289
+  },
+  "bc_best_val_loss": 0.6294211019524519,
+  "final_50ep_row": {
+    "ratio": "1.0",
+    "BC_success_rate_50ep": "0.0",
+    "BC_success_count_50ep": "0",
+    "BC_mean_steps_50ep": "600.0",
+    "best_DAgger_round": "3",
+    "DAgger_success_rate_50ep": "0.24",
+    "DAgger_success_count_50ep": "12",
+    "DAgger_mean_steps_50ep": "536.42"
+  },
+  "rounds": [
+    {
+      "round_idx": 1,
+      "skipped": false,
+      "beta": 1.0,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.7003237430988943,
+      "intermediate_success_count": 0,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.0,
+      "intermediate_mean_steps": 600.0,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_1\\dagger_round_1.hdf5"
+      ]
+    },
+    {
+      "round_idx": 2,
+      "skipped": false,
+      "beta": 0.8,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.7676947712009958,
+      "intermediate_success_count": 0,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.0,
+      "intermediate_mean_steps": 600.0,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_2\\dagger_round_2.hdf5"
+      ]
+    },
+    {
+      "round_idx": 3,
+      "skipped": false,
+      "beta": 0.6400000000000001,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 20,
+      "collection_success_rate": 1.0,
+      "best_val_loss": 0.8349773896255721,
+      "intermediate_success_count": 4,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.13333333333333333,
+      "intermediate_mean_steps": 561.5333333333333,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_3\\dagger_round_3.hdf5"
+      ]
+    },
+    {
+      "round_idx": 4,
+      "skipped": false,
+      "beta": 0.5120000000000001,
+      "saved_episodes": 20,
+      "attempted_episodes": 20,
+      "collection_success_count": 19,
+      "collection_success_rate": 0.95,
+      "best_val_loss": 0.9118756349857802,
+      "intermediate_success_count": 0,
+      "intermediate_episodes": 30,
+      "intermediate_success_rate": 0.0,
+      "intermediate_mean_steps": 600.0,
+      "aggregate_data_paths": [
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_3\\dagger_round_3.hdf5",
+        "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_4\\dagger_round_4.hdf5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "hdf5_path": "./demonstrations/dual_arm/expert/dual_arm_clean.hdf5",
+  "format": "official",
+  "num_episodes": 200,
+  "root_total_attr": 200,
+  "avg_length": 121.105,
+  "std_length": 3.850191553676258,
+  "min_length": 112,
+  "max_length": 127,
+  "actions_stats": {
+    "shape": [
+      24221,
+      14
+    ],
+    "mean_abs": 0.19104223730156658,
+    "std_abs": 0.35546571406650307,
+    "max_abs": 1.0,
+    "per_dim_mean_abs": [
+      0.07318954169750214,
+      0.07807750999927521,
+      0.13776244223117828,
+      0.0,
+      0.0,
+      0.048939310014247894,
+      1.0,
+      0.07144978642463684,
+      0.07884495705366135,
+      0.13743984699249268,
+      0.0,
+      0.0,
+      0.048887915909290314,
+      1.0
+    ],
+    "per_dim_std_abs": [
+      0.14373768866062164,
+      0.1260482519865036,
+      0.25074753165245056,
+      0.0,
+      0.0,
+      0.09017365425825119,
+      0.0,
+      0.14024364948272705,
+      0.127303346991539,
+      0.25091060996055603,
+      0.0,
+      0.0,
+      0.09016423672437668,
+      0.0
+    ]
+  },
+  "states_stats": {
+    "shape": [
+      24221,
+      50
+    ],
+    "mean_norm": 6.544323701328465,
+    "std_norm": 0.8291706212145402
+  },
+  "root_attrs": {
+    "date": "4-16-2026",
+    "env": "TwoArmLift",
+    "env_info": {
+      "env_name": "TwoArmLift",
+      "robots": [
+        "Panda",
+        "Panda"
+      ],
+      "controller_configs": {
+        "type": "BASIC",
+        "body_parts": {
+          "right": {
+            "type": "OSC_POSE",
+            "input_max": 1,
+            "input_min": -1,
+            "output_max": [
+              0.05,
+              0.05,
+              0.05,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "output_min": [
+              -0.05,
+              -0.05,
+              -0.05,
+              -0.5,
+              -0.5,
+              -0.5
+            ],
+            "kp": 150,
+            "damping_ratio": 1,
+            "impedance_mode": "fixed",
+            "kp_limits": [
+              0,
+              300
+            ],
+            "damping_ratio_limits": [
+              0,
+              10
+            ],
+            "position_limits": null,
+            "orientation_limits": null,
+            "uncouple_pos_ori": true,
+            "input_type": "delta",
+            "input_ref_frame": "base",
+            "interpolation": null,
+            "ramp_ratio": 0.2,
+            "gripper": {
+              "type": "GRIP"
+            }
+          }
+        }
+      },
+      "env_configuration": "parallel"
+    },
+    "repository_version": "1.5.2",
+    "time": "14:36:51",
+    "total": 200
+  },
+  "final_stage_counts": null,
+  "num_success": null,
+  "success_rate": null,
+  "success_note": "Per-demo success is not stored in this HDF5 format. For official robosuite exports, success is often implicit because only saved demos are kept."
+}

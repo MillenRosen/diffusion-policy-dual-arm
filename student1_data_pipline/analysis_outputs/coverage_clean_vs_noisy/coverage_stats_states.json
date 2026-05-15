@@ -1,0 +1,71 @@
+{
+  "datasets": {
+    "dual_clean": {
+      "num_points": 5000,
+      "center": [
+        -1.000474452972412,
+        -1.5811891555786133
+      ]
+    },
+    "dual_noisy": {
+      "num_points": 5000,
+      "center": [
+        0.4590296447277069,
+        -1.1133604049682617
+      ]
+    },
+    "single_clean": {
+      "num_points": 5000,
+      "center": [
+        -2.3494765758514404,
+        2.1660680770874023
+      ]
+    },
+    "single_noisy": {
+      "num_points": 5000,
+      "center": [
+        -1.8382099866867065,
+        2.341373920440674
+      ]
+    },
+    "sequential_clean": {
+      "num_points": 5000,
+      "center": [
+        2.2093942165374756,
+        -0.9031690359115601
+      ]
+    },
+    "sequential_noisy": {
+      "num_points": 5000,
+      "center": [
+        2.5197348594665527,
+        -0.9095869064331055
+      ]
+    }
+  },
+  "explained_variance_ratio": [
+    0.6890634298324585,
+    0.19845856726169586
+  ],
+  "pairwise_center_distances": {
+    "dual_clean__vs__dual_noisy": 1.5326499938964844,
+    "dual_clean__vs__single_clean": 3.982680559158325,
+    "dual_clean__vs__single_noisy": 4.011022567749023,
+    "dual_clean__vs__sequential_clean": 3.280696392059326,
+    "dual_clean__vs__sequential_noisy": 3.583702325820923,
+    "dual_noisy__vs__single_clean": 4.3176798820495605,
+    "dual_noisy__vs__single_noisy": 4.148794651031494,
+    "dual_noisy__vs__sequential_clean": 1.762939691543579,
+    "dual_noisy__vs__sequential_noisy": 2.07075572013855,
+    "single_clean__vs__single_noisy": 0.5404865145683289,
+    "single_clean__vs__sequential_clean": 5.495772838592529,
+    "single_clean__vs__sequential_noisy": 5.759242057800293,
+    "single_noisy__vs__sequential_clean": 5.1875,
+    "single_noisy__vs__sequential_noisy": 5.43695068359375,
+    "sequential_clean__vs__sequential_noisy": 0.31040698289871216
+  },
+  "plot_path": "./analysis_outputs/coverage_clean_vs_noisy\\coverage_pca_states.png",
+  "feature_mode": "states",
+  "sample_mode": "all",
+  "max_points_per_dataset": 5000
+}

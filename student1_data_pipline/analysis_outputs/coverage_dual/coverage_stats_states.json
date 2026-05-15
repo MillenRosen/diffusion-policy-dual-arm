@@ -1,0 +1,29 @@
+{
+  "datasets": {
+    "dual_clean": {
+      "num_points": 5000,
+      "center": [
+        -0.7685994505882263,
+        0.038774654269218445
+      ]
+    },
+    "dual_noisy": {
+      "num_points": 5000,
+      "center": [
+        0.7686185836791992,
+        -0.03877249360084534
+      ]
+    }
+  },
+  "explained_variance_ratio": [
+    0.754795253276825,
+    0.10350151360034943
+  ],
+  "pairwise_center_distances": {
+    "dual_clean__vs__dual_noisy": 1.539172887802124
+  },
+  "plot_path": "./analysis_outputs/coverage_dual\\coverage_pca_states.png",
+  "feature_mode": "states",
+  "sample_mode": "all",
+  "max_points_per_dataset": 5000
+}

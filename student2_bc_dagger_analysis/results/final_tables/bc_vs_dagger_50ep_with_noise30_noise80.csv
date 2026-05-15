@@ -1,0 +1,6 @@
+ratio,BC_success_rate_50ep,BC_success_count_50ep,BC_mean_steps_50ep,best_DAgger_round,DAgger_success_rate_50ep,DAgger_success_count_50ep,DAgger_mean_steps_50ep
+0.0,0.72,36,265.64,2,0.44,22,404.08
+0.3,0.18,9,531.06,3,0.68,34,334.52
+0.5,0.0,0,600.0,3,0.9,45,204.08
+0.8,0.0,0,600.0,1,0.0,0,600.0
+1.0,0.0,0,600.0,3,0.24,12,536.42

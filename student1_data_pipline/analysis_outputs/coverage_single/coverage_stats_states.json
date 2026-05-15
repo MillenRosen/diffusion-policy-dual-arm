@@ -1,0 +1,29 @@
+{
+  "datasets": {
+    "single_clean": {
+      "num_points": 5000,
+      "center": [
+        -0.25022071599960327,
+        -0.0404810905456543
+      ]
+    },
+    "single_noisy": {
+      "num_points": 5000,
+      "center": [
+        0.2502315640449524,
+        0.04048044607043266
+      ]
+    }
+  },
+  "explained_variance_ratio": [
+    0.640106737613678,
+    0.17979463934898376
+  ],
+  "pairwise_center_distances": {
+    "single_clean__vs__single_noisy": 0.5069588422775269
+  },
+  "plot_path": "./analysis_outputs/coverage_single\\coverage_pca_states.png",
+  "feature_mode": "states",
+  "sample_mode": "all",
+  "max_points_per_dataset": 5000
+}

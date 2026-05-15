@@ -1,0 +1,543 @@
+{
+  "noise50": {
+    "manifest_path": "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.manifest.json",
+    "clean_count": 80,
+    "noisy_count": 80,
+    "total_trajectories": 160,
+    "actual_noisy_ratio_by_trajectory": 0.5,
+    "actual_noisy_ratio_by_timestep": 0.5864693807731782,
+    "train_demo_ids_count": 128,
+    "val_demo_ids_count": 32,
+    "selected_clean_demos_first10": [
+      "demo_1",
+      "demo_4",
+      "demo_11",
+      "demo_16",
+      "demo_17",
+      "demo_19",
+      "demo_21",
+      "demo_24",
+      "demo_25",
+      "demo_26"
+    ],
+    "selected_noisy_demos_first10": [
+      "demo_3",
+      "demo_4",
+      "demo_5",
+      "demo_9",
+      "demo_10",
+      "demo_12",
+      "demo_15",
+      "demo_16",
+      "demo_18",
+      "demo_21"
+    ],
+    "train_stats": {
+      "num_demos": 128,
+      "source_counts": {
+        "clean": 61,
+        "noisy": 67
+      },
+      "source_steps": {
+        "clean": 7377,
+        "noisy": 11399
+      },
+      "length_min": 113,
+      "length_mean": 146.6875,
+      "length_max": 545,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.23093914985656738,
+      "gripper_positive_fraction": 0.17485087345547506,
+      "z_positive_fraction": 0.4693757988922028
+    },
+    "val_stats": {
+      "num_demos": 32,
+      "source_counts": {
+        "noisy": 13,
+        "clean": 19
+      },
+      "source_steps": {
+        "noisy": 2315,
+        "clean": 2293
+      },
+      "length_min": 112,
+      "length_mean": 144.0,
+      "length_max": 468,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.22343166172504425,
+      "gripper_positive_fraction": 0.17317708333333334,
+      "z_positive_fraction": 0.4679904513888889
+    },
+    "all_stats": {
+      "num_demos": 160,
+      "source_counts": {
+        "clean": 80,
+        "noisy": 80
+      },
+      "source_steps": {
+        "clean": 9670,
+        "noisy": 13714
+      },
+      "length_min": 112,
+      "length_mean": 146.15,
+      "length_max": 545,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.2294597029685974,
+      "gripper_positive_fraction": 0.17452104002736915,
+      "z_positive_fraction": 0.46910280533698256
+    },
+    "bc_checkpoint": "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\bc_ratio\\noise50\\seed_0\\bc_best.pt",
+    "bc_best_val_loss": 0.4754614999724759,
+    "bc_best_epoch": 12,
+    "bc_train_samples": 18776,
+    "bc_val_samples": 4608,
+    "dagger_rounds": [
+      {
+        "round_idx": 1,
+        "skipped": false,
+        "beta": 1.0,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.534804901935988,
+        "intermediate_success_count": 0,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.0,
+        "intermediate_mean_steps": 600.0,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_1\\dagger_round_1.hdf5"
+        ]
+      },
+      {
+        "round_idx": 2,
+        "skipped": false,
+        "beta": 0.8,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.588375779075755,
+        "intermediate_success_count": 2,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.06666666666666667,
+        "intermediate_mean_steps": 572.6666666666666,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_2\\dagger_round_2.hdf5"
+        ]
+      },
+      {
+        "round_idx": 3,
+        "skipped": false,
+        "beta": 0.6400000000000001,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.6450175363570452,
+        "intermediate_success_count": 30,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 1.0,
+        "intermediate_mean_steps": 161.83333333333334,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_3\\dagger_round_3.hdf5"
+        ]
+      },
+      {
+        "round_idx": 4,
+        "skipped": false,
+        "beta": 0.5120000000000001,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.7000449674410952,
+        "intermediate_success_count": 26,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.8666666666666667,
+        "intermediate_mean_steps": 227.8,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise50\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_3\\dagger_round_3.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise50\\seed_0\\dagger_round_4\\dagger_round_4.hdf5"
+        ]
+      }
+    ],
+    "final_50ep_row": {
+      "ratio": "0.5",
+      "BC_success_rate_50ep": "0.0",
+      "BC_success_count_50ep": "0",
+      "BC_mean_steps_50ep": "600.0",
+      "best_DAgger_round": "3",
+      "DAgger_success_rate_50ep": "0.9",
+      "DAgger_success_count_50ep": "45",
+      "DAgger_mean_steps_50ep": "204.08"
+    }
+  },
+  "noise80": {
+    "manifest_path": "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.manifest.json",
+    "clean_count": 32,
+    "noisy_count": 128,
+    "total_trajectories": 160,
+    "actual_noisy_ratio_by_trajectory": 0.8,
+    "actual_noisy_ratio_by_timestep": 0.845957785742732,
+    "train_demo_ids_count": 128,
+    "val_demo_ids_count": 32,
+    "selected_clean_demos_first10": [
+      "demo_11",
+      "demo_19",
+      "demo_25",
+      "demo_26",
+      "demo_36",
+      "demo_38",
+      "demo_56",
+      "demo_65",
+      "demo_67",
+      "demo_73"
+    ],
+    "selected_noisy_demos_first10": [
+      "demo_1",
+      "demo_2",
+      "demo_3",
+      "demo_4",
+      "demo_5",
+      "demo_6",
+      "demo_8",
+      "demo_9",
+      "demo_10",
+      "demo_11"
+    ],
+    "train_stats": {
+      "num_demos": 128,
+      "source_counts": {
+        "noisy": 100,
+        "clean": 28
+      },
+      "source_steps": {
+        "noisy": 16391,
+        "clean": 3391
+      },
+      "length_min": 115,
+      "length_mean": 154.546875,
+      "length_max": 545,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.24614274501800537,
+      "gripper_positive_fraction": 0.16560509554140126,
+      "z_positive_fraction": 0.4586492771206147
+    },
+    "val_stats": {
+      "num_demos": 32,
+      "source_counts": {
+        "clean": 4,
+        "noisy": 28
+      },
+      "source_steps": {
+        "clean": 477,
+        "noisy": 4851
+      },
+      "length_min": 112,
+      "length_mean": 166.5,
+      "length_max": 468,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.2512260377407074,
+      "gripper_positive_fraction": 0.1617867867867868,
+      "z_positive_fraction": 0.45899024024024027
+    },
+    "all_stats": {
+      "num_demos": 160,
+      "source_counts": {
+        "noisy": 128,
+        "clean": 32
+      },
+      "source_steps": {
+        "noisy": 21242,
+        "clean": 3868
+      },
+      "length_min": 112,
+      "length_mean": 156.9375,
+      "length_max": 545,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.24722138047218323,
+      "gripper_positive_fraction": 0.16479490242931102,
+      "z_positive_fraction": 0.4587216248506571
+    },
+    "bc_checkpoint": "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\bc_ratio\\noise80\\seed_0\\bc_best.pt",
+    "bc_best_val_loss": 0.6667344611328285,
+    "bc_best_epoch": 9,
+    "bc_train_samples": 19782,
+    "bc_val_samples": 5328,
+    "dagger_rounds": [
+      {
+        "round_idx": 1,
+        "skipped": false,
+        "beta": 1.0,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.7478652768306904,
+        "intermediate_success_count": 0,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.0,
+        "intermediate_mean_steps": 600.0,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_1\\dagger_round_1.hdf5"
+        ]
+      },
+      {
+        "round_idx": 2,
+        "skipped": false,
+        "beta": 0.8,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.8264553951429533,
+        "intermediate_success_count": 0,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.0,
+        "intermediate_mean_steps": 600.0,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_2\\dagger_round_2.hdf5"
+        ]
+      },
+      {
+        "round_idx": 3,
+        "skipped": false,
+        "beta": 0.6400000000000001,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.9010610143701594,
+        "intermediate_success_count": 0,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.0,
+        "intermediate_mean_steps": 600.0,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_3\\dagger_round_3.hdf5"
+        ]
+      },
+      {
+        "round_idx": 4,
+        "skipped": false,
+        "beta": 0.5120000000000001,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 19,
+        "collection_success_rate": 0.95,
+        "best_val_loss": 0.9871042254450801,
+        "intermediate_success_count": 0,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.0,
+        "intermediate_mean_steps": 600.0,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise80\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_3\\dagger_round_3.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise80\\seed_0\\dagger_round_4\\dagger_round_4.hdf5"
+        ]
+      }
+    ],
+    "final_50ep_row": {
+      "ratio": "0.8",
+      "BC_success_rate_50ep": "0.0",
+      "BC_success_count_50ep": "0",
+      "BC_mean_steps_50ep": "600.0",
+      "best_DAgger_round": "1",
+      "DAgger_success_rate_50ep": "0.0",
+      "DAgger_success_count_50ep": "0",
+      "DAgger_mean_steps_50ep": "600.0"
+    }
+  },
+  "noise100": {
+    "manifest_path": "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.manifest.json",
+    "clean_count": 0,
+    "noisy_count": 160,
+    "total_trajectories": 160,
+    "actual_noisy_ratio_by_trajectory": 1.0,
+    "actual_noisy_ratio_by_timestep": 1.0,
+    "train_demo_ids_count": 128,
+    "val_demo_ids_count": 32,
+    "selected_clean_demos_first10": [],
+    "selected_noisy_demos_first10": [
+      "demo_1",
+      "demo_2",
+      "demo_3",
+      "demo_4",
+      "demo_5",
+      "demo_6",
+      "demo_7",
+      "demo_8",
+      "demo_9",
+      "demo_10"
+    ],
+    "train_stats": {
+      "num_demos": 128,
+      "source_counts": {
+        "noisy": 128
+      },
+      "source_steps": {
+        "noisy": 21041
+      },
+      "length_min": 115,
+      "length_mean": 164.3828125,
+      "length_max": 468,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.25761306285858154,
+      "gripper_positive_fraction": 0.1573594410912029,
+      "z_positive_fraction": 0.4504063495081032
+    },
+    "val_stats": {
+      "num_demos": 32,
+      "source_counts": {
+        "noisy": 32
+      },
+      "source_steps": {
+        "noisy": 5368
+      },
+      "length_min": 111,
+      "length_mean": 167.75,
+      "length_max": 545,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.25737208127975464,
+      "gripper_positive_fraction": 0.15461997019374069,
+      "z_positive_fraction": 0.4475596125186289
+    },
+    "all_stats": {
+      "num_demos": 160,
+      "source_counts": {
+        "noisy": 160
+      },
+      "source_steps": {
+        "noisy": 26409
+      },
+      "length_min": 111,
+      "length_mean": 165.05625,
+      "length_max": 545,
+      "success_count": 0,
+      "has_success_attr_count": 0,
+      "action_abs_mean": 0.25756406784057617,
+      "gripper_positive_fraction": 0.15680260517247907,
+      "z_positive_fraction": 0.44982771025029344
+    },
+    "bc_checkpoint": "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\bc_ratio\\noise100\\seed_0\\bc_best.pt",
+    "bc_best_val_loss": 0.6294211019524519,
+    "bc_best_epoch": 17,
+    "bc_train_samples": 21041,
+    "bc_val_samples": 5368,
+    "dagger_rounds": [
+      {
+        "round_idx": 1,
+        "skipped": false,
+        "beta": 1.0,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.7003237430988943,
+        "intermediate_success_count": 0,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.0,
+        "intermediate_mean_steps": 600.0,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_1\\dagger_round_1.hdf5"
+        ]
+      },
+      {
+        "round_idx": 2,
+        "skipped": false,
+        "beta": 0.8,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.7676947712009958,
+        "intermediate_success_count": 0,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.0,
+        "intermediate_mean_steps": 600.0,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_2\\dagger_round_2.hdf5"
+        ]
+      },
+      {
+        "round_idx": 3,
+        "skipped": false,
+        "beta": 0.6400000000000001,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 20,
+        "collection_success_rate": 1.0,
+        "best_val_loss": 0.8349773896255721,
+        "intermediate_success_count": 4,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.13333333333333333,
+        "intermediate_mean_steps": 561.5333333333333,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_3\\dagger_round_3.hdf5"
+        ]
+      },
+      {
+        "round_idx": 4,
+        "skipped": false,
+        "beta": 0.5120000000000001,
+        "saved_episodes": 20,
+        "attempted_episodes": 20,
+        "collection_success_count": 19,
+        "collection_success_rate": 0.95,
+        "best_val_loss": 0.9118756349857802,
+        "intermediate_success_count": 0,
+        "intermediate_episodes": 30,
+        "intermediate_success_rate": 0.0,
+        "intermediate_mean_steps": 600.0,
+        "aggregate_data_paths": [
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise100\\dual_arm_mixed.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_1\\dagger_round_1.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_2\\dagger_round_2.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_3\\dagger_round_3.hdf5",
+          "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\dagger\\noise100\\seed_0\\dagger_round_4\\dagger_round_4.hdf5"
+        ]
+      }
+    ],
+    "final_50ep_row": {
+      "ratio": "1.0",
+      "BC_success_rate_50ep": "0.0",
+      "BC_success_count_50ep": "0",
+      "BC_mean_steps_50ep": "600.0",
+      "best_DAgger_round": "3",
+      "DAgger_success_rate_50ep": "0.24",
+      "DAgger_success_count_50ep": "12",
+      "DAgger_mean_steps_50ep": "536.42"
+    }
+  }
+}

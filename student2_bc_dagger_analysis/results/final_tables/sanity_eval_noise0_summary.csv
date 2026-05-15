@@ -1,0 +1,3 @@
+label,checkpoint_path,success_rate,success_count,episodes,mean_steps,mean_reward
+BC_noise0,D:\A-6019\project\project_new\experiments\final_dual_arm\bc_ratio\noise0\seed_0\bc_best.pt,0.72,36,50,265.64,33.723378403624764
+DAgger_noise0_round2,D:\A-6019\project\project_new\experiments\final_dual_arm\dagger\noise0\seed_0\round_2_train\dagger_round_2_best.pt,0.44,22,50,404.08,66.12511480341387

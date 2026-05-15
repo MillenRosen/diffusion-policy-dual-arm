@@ -1,0 +1,38 @@
+{
+  "datasets": {
+    "dual_arm": {
+      "num_points": 5000,
+      "center": [
+        -0.5103748440742493,
+        -1.4947867393493652
+      ]
+    },
+    "single_arm": {
+      "num_points": 5000,
+      "center": [
+        -2.072925329208374,
+        2.182607889175415
+      ]
+    },
+    "sequential": {
+      "num_points": 5000,
+      "center": [
+        2.5832643508911133,
+        -0.687761664390564
+      ]
+    }
+  },
+  "explained_variance_ratio": [
+    0.6765381693840027,
+    0.23038709163665771
+  ],
+  "pairwise_center_distances": {
+    "dual_arm__vs__single_arm": 3.9955971240997314,
+    "dual_arm__vs__sequential": 3.197169542312622,
+    "single_arm__vs__sequential": 5.469837665557861
+  },
+  "plot_path": "./analysis_outputs/coverage_three_scenarios\\coverage_pca_states.png",
+  "feature_mode": "states",
+  "sample_mode": "all",
+  "max_points_per_dataset": 5000
+}

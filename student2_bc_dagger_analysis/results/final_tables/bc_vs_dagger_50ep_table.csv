@@ -1,0 +1,7 @@
+ratio,ratio_name,method,best_DAgger_round,success_rate_50ep,success_count_50ep,episodes,mean_steps_50ep,mean_reward_50ep,checkpoint_path
+0.0,noise0,BC,,0.72,36,50,265.64,33.723378403624764,D:\A-6019\project\project_new\experiments\final_dual_arm\bc_ratio\noise0\seed_0\bc_best.pt
+0.0,noise0,DAgger,2,0.44,22,50,404.08,66.12511480341387,D:\A-6019\project\project_new\experiments\final_dual_arm\dagger\noise0\seed_0\round_2_train\dagger_round_2_best.pt
+0.5,noise50,BC,,0.0,0,50,600.0,124.97133424107558,D:\A-6019\project\project_new\experiments\final_dual_arm\bc_ratio\noise50\seed_0\bc_best.pt
+0.5,noise50,DAgger,3,0.9,45,50,204.08,35.85466291950241,D:\A-6019\project\project_new\experiments\final_dual_arm\dagger\noise50\seed_0\round_3_train\dagger_round_3_best.pt
+1.0,noise100,BC,,0.0,0,50,600.0,130.09726091135659,D:\A-6019\project\project_new\experiments\final_dual_arm\bc_ratio\noise100\seed_0\bc_best.pt
+1.0,noise100,DAgger,3,0.24,12,50,536.42,114.48492960518497,D:\A-6019\project\project_new\experiments\final_dual_arm\dagger\noise100\seed_0\round_3_train\dagger_round_3_best.pt

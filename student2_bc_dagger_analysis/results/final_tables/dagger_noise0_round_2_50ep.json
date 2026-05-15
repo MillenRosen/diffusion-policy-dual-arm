@@ -1,0 +1,312 @@
+{
+  "source_hdf5_path": "D:\\A-6019\\project\\project_new\\experiments\\final_dual_arm\\mixed_data\\noise0\\dual_arm_mixed.hdf5",
+  "env_name": "TwoArmLift",
+  "episodes": 50,
+  "max_steps": 600,
+  "success_count": 22,
+  "success_rate": 0.44,
+  "mean_steps": 404.08,
+  "mean_reward": 66.12511480341387,
+  "per_episode": [
+    {
+      "episode": 0,
+      "success": true,
+      "steps": 107,
+      "reward": 19.55070750980004
+    },
+    {
+      "episode": 1,
+      "success": true,
+      "steps": 144,
+      "reward": 26.867504489808734
+    },
+    {
+      "episode": 2,
+      "success": false,
+      "steps": 600,
+      "reward": 38.111952786941856
+    },
+    {
+      "episode": 3,
+      "success": true,
+      "steps": 108,
+      "reward": 22.064499999435817
+    },
+    {
+      "episode": 4,
+      "success": false,
+      "steps": 600,
+      "reward": 77.80433658594131
+    },
+    {
+      "episode": 5,
+      "success": false,
+      "steps": 600,
+      "reward": 85.6884227909349
+    },
+    {
+      "episode": 6,
+      "success": false,
+      "steps": 600,
+      "reward": 154.06068950734587
+    },
+    {
+      "episode": 7,
+      "success": false,
+      "steps": 600,
+      "reward": 42.49778708006263
+    },
+    {
+      "episode": 8,
+      "success": false,
+      "steps": 600,
+      "reward": 126.60551499476745
+    },
+    {
+      "episode": 9,
+      "success": false,
+      "steps": 600,
+      "reward": 118.74395464381583
+    },
+    {
+      "episode": 10,
+      "success": false,
+      "steps": 600,
+      "reward": 117.5431932663226
+    },
+    {
+      "episode": 11,
+      "success": true,
+      "steps": 127,
+      "reward": 21.436635072477156
+    },
+    {
+      "episode": 12,
+      "success": true,
+      "steps": 132,
+      "reward": 22.17104319891609
+    },
+    {
+      "episode": 13,
+      "success": false,
+      "steps": 600,
+      "reward": 133.22779228822574
+    },
+    {
+      "episode": 14,
+      "success": false,
+      "steps": 600,
+      "reward": 46.802337366121726
+    },
+    {
+      "episode": 15,
+      "success": false,
+      "steps": 600,
+      "reward": 60.19498732152009
+    },
+    {
+      "episode": 16,
+      "success": false,
+      "steps": 600,
+      "reward": 36.4593522239818
+    },
+    {
+      "episode": 17,
+      "success": false,
+      "steps": 600,
+      "reward": 45.08753729728252
+    },
+    {
+      "episode": 18,
+      "success": true,
+      "steps": 144,
+      "reward": 26.48627462311322
+    },
+    {
+      "episode": 19,
+      "success": false,
+      "steps": 600,
+      "reward": 165.76767273431008
+    },
+    {
+      "episode": 20,
+      "success": false,
+      "steps": 600,
+      "reward": 49.61809584887934
+    },
+    {
+      "episode": 21,
+      "success": false,
+      "steps": 600,
+      "reward": 33.4369445349638
+    },
+    {
+      "episode": 22,
+      "success": true,
+      "steps": 139,
+      "reward": 31.797788255665253
+    },
+    {
+      "episode": 23,
+      "success": true,
+      "steps": 114,
+      "reward": 21.194589961519377
+    },
+    {
+      "episode": 24,
+      "success": false,
+      "steps": 600,
+      "reward": 74.23220833500903
+    },
+    {
+      "episode": 25,
+      "success": true,
+      "steps": 127,
+      "reward": 26.051220669298527
+    },
+    {
+      "episode": 26,
+      "success": true,
+      "steps": 162,
+      "reward": 30.420453327316206
+    },
+    {
+      "episode": 27,
+      "success": false,
+      "steps": 600,
+      "reward": 132.00165850631146
+    },
+    {
+      "episode": 28,
+      "success": false,
+      "steps": 600,
+      "reward": 41.773631225558105
+    },
+    {
+      "episode": 29,
+      "success": false,
+      "steps": 600,
+      "reward": 78.9312723224839
+    },
+    {
+      "episode": 30,
+      "success": true,
+      "steps": 133,
+      "reward": 23.475765732627647
+    },
+    {
+      "episode": 31,
+      "success": true,
+      "steps": 114,
+      "reward": 22.009273391290638
+    },
+    {
+      "episode": 32,
+      "success": true,
+      "steps": 123,
+      "reward": 23.238491689859448
+    },
+    {
+      "episode": 33,
+      "success": false,
+      "steps": 600,
+      "reward": 171.848078712862
+    },
+    {
+      "episode": 34,
+      "success": true,
+      "steps": 210,
+      "reward": 31.972503730089763
+    },
+    {
+      "episode": 35,
+      "success": true,
+      "steps": 130,
+      "reward": 20.932458181421843
+    },
+    {
+      "episode": 36,
+      "success": false,
+      "steps": 600,
+      "reward": 50.170890652596476
+    },
+    {
+      "episode": 37,
+      "success": true,
+      "steps": 126,
+      "reward": 23.43138259678752
+    },
+    {
+      "episode": 38,
+      "success": false,
+      "steps": 600,
+      "reward": 164.17117179043504
+    },
+    {
+      "episode": 39,
+      "success": true,
+      "steps": 218,
+      "reward": 43.403789381172885
+    },
+    {
+      "episode": 40,
+      "success": false,
+      "steps": 600,
+      "reward": 210.55443093517619
+    },
+    {
+      "episode": 41,
+      "success": false,
+      "steps": 600,
+      "reward": 128.59012954542
+    },
+    {
+      "episode": 42,
+      "success": true,
+      "steps": 152,
+      "reward": 24.62732252292987
+    },
+    {
+      "episode": 43,
+      "success": true,
+      "steps": 123,
+      "reward": 19.890647312133478
+    },
+    {
+      "episode": 44,
+      "success": true,
+      "steps": 186,
+      "reward": 36.29214434633544
+    },
+    {
+      "episode": 45,
+      "success": false,
+      "steps": 600,
+      "reward": 85.3917278772859
+    },
+    {
+      "episode": 46,
+      "success": true,
+      "steps": 437,
+      "reward": 128.17425654294235
+    },
+    {
+      "episode": 47,
+      "success": false,
+      "steps": 600,
+      "reward": 81.54119941657979
+    },
+    {
+      "episode": 48,
+      "success": true,
+      "steps": 148,
+      "reward": 26.7718085663902
+    },
+    {
+      "episode": 49,
+      "success": false,
+      "steps": 600,
+      "reward": 83.13820847822645
+    }
+  ]
+}
